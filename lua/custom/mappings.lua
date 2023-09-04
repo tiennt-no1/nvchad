@@ -13,8 +13,12 @@ M.abc = {
   i = {
      ["jk"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
   },
+
   n = {
     ["<leader>fs"] = { "<cmd> Telescope treesitter <CR>", "Telescope treesitter" },
+    ["<leader>s"] = { "<Cmd>Svart<CR>"},
+    ["<leader>S"] = { "<Cmd>SvartRegex<CR>"},
+    ["<leader>gs"] = { "<Cmd>SvartRepeat<CR>"},
   }
 }
 

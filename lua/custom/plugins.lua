@@ -1,5 +1,14 @@
 local plugins = {
   {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim", -- required
+      "nvim-telescope/telescope.nvim", -- optional
+      "sindrets/diffview.nvim", -- optional
+    },
+    config = true,
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -23,7 +32,10 @@ local plugins = {
   -- { "kenn7/vim-arsync", dependencies = {
   --   "prabirshrestha/async.vim",
   -- } },
+  { "tpope/vim-fugitive", lazy = false },
+  { "brooth/far.vim", lazy = false },
   { "tpope/vim-surround", lazy = false },
+  { "madyanov/svart.nvim", lazy = false },
   {
     "neovim/nvim-lspconfig",
     dependencies = {

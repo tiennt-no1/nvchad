@@ -1,4 +1,4 @@
----@type ChadrcConfig
+--@type ChadrcConfig
 local M = {}
 
 vim.cmd("set clipboard=unnamedplus ")
